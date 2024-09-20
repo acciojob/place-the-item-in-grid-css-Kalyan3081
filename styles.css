@@ -1,9 +1,20 @@
-/* Your CSS Code here. */
-.holder{
-	display:grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	width:200px;
-	height:200px;
-	grid-gap:10px;
+/* Define the grid container */
+.holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(2, 1fr);    /* Two equal rows */
+    width: 200px;
+    height: 200px;
+    gap: 10px; /* Optional: gap between grid items */
+}
+
+/* Individual item styles (unchanged) */
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-weight: bold;
 }
