@@ -1,20 +1,17 @@
-/* Define the grid container */
 .holder {
     display: grid;
+    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    grid-template-rows: repeat(2, 1fr);    /* Two equal rows */
-    width: 100px;
-    height: 100px;
-    gap: 10px; /* Optional: gap between grid items */
+    width: 200px;
+    height: 200px;
+    gap: 10px; /* Optional spacing between items */
 }
 
-/* Individual item styles (unchanged) */
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: lightgray;
-    border: 1px solid #000;
-    font-size: 20px;
-    font-weight: bold;
+    border: 1px solid black;
+    font-size: 24px;
 }
